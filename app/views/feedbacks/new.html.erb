@@ -1,0 +1,20 @@
+<head>
+<style>
+p.padding
+{
+padding-top:45px;
+padding-bottom:25px;
+padding-right:50px;
+padding-left:50px;
+}
+</style>
+</head>
+
+<p>
+<%- model_class = Feedback -%>
+<div class="page-header">
+  <p class="padding"> </p>
+  <h6><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h6>
+</div>
+<%= render :partial => 'form' %>
+</p>

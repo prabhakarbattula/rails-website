@@ -1,14 +1,16 @@
 Prabhakarweb::Application.routes.draw do
+  resources :feedbacks
+
   resources :articles
 
   
-root :to => 'articles#home'
+root :to => 'feedbacks#home'
 
-get 'contactus' => 'articles#contactus'
-get 'home' => 'articles#home'
-get 'aboutus' => 'articles#aboutus'
-get 'feedback' => 'articles#new'
-get 'services' => 'articles#services'
+get 'contactus' => 'feedbacks#contactus'
+get 'home' => 'feedbacks#home'
+get 'aboutus' => 'feedbacks#aboutus'
+get 'feedback' => 'feedbacks#new'
+get 'services' => 'feedbacks#services'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
