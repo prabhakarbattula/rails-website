@@ -3,7 +3,7 @@ Prabhakarweb::Application.routes.draw do
 
   resources :articles
 
-  
+
 root :to => 'feedbacks#home'
 
 get 'contactus' => 'feedbacks#contactus'
